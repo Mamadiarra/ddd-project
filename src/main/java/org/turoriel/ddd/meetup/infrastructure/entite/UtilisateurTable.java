@@ -37,6 +37,12 @@ public class UtilisateurTable {
         this.age = utilisateur.getAge();
     }
 
+    public UtilisateurTable(String firstname, String lastname, int age) {
+        this.nom = firstname;
+        this.prenom = lastname;
+        this.age = age;
+    }
+
     public UUID getId() {
         return id;
     }
