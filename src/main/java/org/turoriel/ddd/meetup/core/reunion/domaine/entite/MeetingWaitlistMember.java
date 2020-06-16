@@ -5,6 +5,10 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 
+/**
+ * <p>Entité domaine representant les informations de la liste d'attente</p>
+ * @author Touré Ahmed Christian Cédrick 2020-06-16
+ */
 public class MeetingWaitlistMember implements Serializable {
 
     private UUID id;
@@ -38,4 +42,9 @@ public class MeetingWaitlistMember implements Serializable {
     public void setId(UUID id) {
         this.id = id;
     }
+
+    private void ajouterMembre(Membre membre) {
+        this.membres.add(membre);
+    }
+
 }

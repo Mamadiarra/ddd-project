@@ -5,6 +5,10 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 
+/**
+ * <p>Entité domaine representant les informations des membres attendus au meeting</p>
+ * @author Touré Ahmed Christian Cédrick 2020-06-16
+ */
 public class MeetingAttendee implements Serializable {
 
     private UUID id;
@@ -40,5 +44,9 @@ public class MeetingAttendee implements Serializable {
 
     public void setMeeting(Meeting meeting) {
         this.meeting = meeting;
+    }
+
+    public void ajouterMembre(Membre membre) {
+        this.membres.add(membre);
     }
 }
